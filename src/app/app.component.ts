@@ -47,12 +47,12 @@ export class AppComponent implements OnInit{
     }
 
     // 表示文字列の末尾がポ,プ,テ,ピピックかどうか判定する関数
-    private isPopTeamEpic(str:string,targetString:string):boolean{
+    public isPopTeamEpic(str:string,targetString:string):boolean{
         return str.endsWith(targetString);
     }
 
     // ボタンを一度しか押せないように制御
-    private canStart(str:string):boolean{
+    public canStart(str:string):boolean{
         return str === '';
     }
     
